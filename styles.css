@@ -1,0 +1,84 @@
+*{
+	margin:0px;
+}
+.container{
+	display:flex;
+	width:100vw;
+	height:100vh;
+	flex-direction:column;
+	background-color:black;
+}
+.top{
+	display:flex;	
+	flex-direction:row;
+	width:100vw;
+	height:50vh;
+	justify-content:space-around;
+	align-items:center;
+}
+.diamonds{
+	width:350px;
+	height:350px;
+	border-radius:100%;
+	background-image:radial-gradient(rgb(170, 39, 227),rgb(39, 58, 227),rgb(29, 169, 196));
+	margin:10px;
+}
+@keyframes shrink {
+  0% {
+    height: 350px;
+    width: 350px;
+  }
+  50% {
+    height: 150px;
+    width: 150px;
+  }
+  0% {
+    height: 350px;
+    width: 350px;
+  }
+
+}
+.diamonds{
+	animation-name:shrink;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+	filter:blur(50px);
+}
+.bottom{
+	display:flex;
+	width:100vw;
+	height:50vh;
+	justify-content:space-around;
+	align-items:center;
+}
+.cresent{
+	width:350px;
+	height:350px;
+	border-radius:100%;
+	background-image:radial-gradient(rgb(244, 247, 54),rgb(247, 135, 15),rgb(247, 19, 15));
+	margin:10px;
+
+}
+@keyframes shrink {
+  0% {
+    height: 350px;
+    width: 350px;
+  }
+  50% {
+    height: 150px;
+    width: 150px;
+  }
+  0% {
+    height: 350px;
+    width: 350px;
+  }
+
+}
+.cresent{
+	animation-name:shrink;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+	filter:blur(50px);
+	transition-delay:3s;
